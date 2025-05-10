@@ -44,6 +44,9 @@ jobs:
       - name: Install pm2
         run: npm install -g pm2
 
+      - name: find the directory
+        run: ls -al
+
       - name: copy the build folder in apache2 server
         uses: nogsantos/scp-deploy@master
         with:
