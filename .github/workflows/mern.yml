@@ -21,7 +21,7 @@ jobs:
         run: sudo apt update
 
       - name: Install Npm
-        run: npm install react@17.0.2 react-dom@17.0.2
+        run: npm install --legacy-peer-deps
 
       - name: Update the browserslist
         run: npx browserslist@latest --update-db
