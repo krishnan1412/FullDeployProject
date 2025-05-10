@@ -72,8 +72,8 @@ jobs:
       - name: Save PM2 process list
         run: pm2 save
 
-      - name: Ensure PM2 starts on reboot
-        run: pm2 startup systemd
+      # - name: Ensure PM2 starts on reboot
+      #   run: pm2 startup systemd
 
       - name: Restart Apache2 server
         run: sudo systemctl restart apache2
